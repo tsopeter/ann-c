@@ -41,5 +41,5 @@ output_file_name='./MemoryFile/Train/mnist.labels.mem';
 fileID=fopen(output_file_name, 'w');
 for i=1:length(L)
     v=int8(L(i))-1;
-    fprintf(fileID, "%s", dec2hex(v));
+    fprintf(fileID, "%s\n", dec2hex(v));
 end
