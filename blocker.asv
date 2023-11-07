@@ -36,10 +36,8 @@ for i=1:28
     end
 end
 
-L=processLabelsMNIST('Images/train-labels-idx1-ubyte.gz');
+L=processLabelsMNIST('Images/train-lables-idx1-ubyte.gz');
 output_file_name='./MemoryFile/Train/mnist.labels.mem';
-fileID=fopen(output_file_name, 'w');
 for i=1:length(L)
-    v=int8(L(i))-1;
-    fprintf(fileID, "%s", dec2hex(v));
+    f
 end
